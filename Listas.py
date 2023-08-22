@@ -23,7 +23,7 @@ class lista_enlazada:
     print("Datos: ")
     print("Producto     Cantidad        Precio Unitario     Valor Total     Ubicacion ")
     while actual != None:
-      print(actual.Producto._nombre, "      ", actual.Producto._cantidad, "     ", actual.Producto._precioUnitario, "       ", (actual.Producto._cantidad * actual.Producto._precioUnitario), "        ", actual.Producto._ubicacion)
+      print(actual.Producto._nombre, "         ", actual.Producto._cantidad, "          ", actual.Producto._precioUnitario, "       ", (actual.Producto._cantidad * actual.Producto._precioUnitario), "              ", actual.Producto._ubicacion)
       actual = actual.siguiente
 
   def buscar_producto(self, nombre, ubicacion):
