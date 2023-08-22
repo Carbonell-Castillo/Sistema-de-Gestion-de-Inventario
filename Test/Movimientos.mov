@@ -1,1 +1,5 @@
 agregar_stock Manzanas;50;BodegaA
+agregar_stock Peras;50;BodegaA
+agregar_stock Uvas;50;BodegB
+agregar_stock Manzanas;50;BodegaC
+vender_producto Peras;20;BodegaB

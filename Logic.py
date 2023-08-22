@@ -19,11 +19,6 @@ def leer_inventario(nombre_archivo):
 
     except FileNotFoundError:
         print(f"El archivo {nombre_archivo} no se encuentra.")
-        return []
-
-
-
-
 
 
     def agregar_stock(self, nombre, cantidad, ubicacion):
@@ -52,7 +47,16 @@ def leer_movimientos(nombre_archivo):
                         sg.listaProductos.agregar_stock(nombre, ubicacion, int(cantidad))
                     else:
                         print(f"No se encontró el producto {nombre} en {ubicacion} para agregar stock")
-
+                
+                elif instruccion == 'vender_producto':
+                    nombre, cantidad, ubicacion = detalles.split(';')
+                    producto_existente = sg.listaProductos.buscar_producto(nombre, ubicacion)
+                    
+                    if producto_existente:
+                        sg.listaProductos.vender_producto(nombre, ubicacion, int(cantidad))
+                    else:
+                        print(f"No se encontró el producto {nombre} en {ubicacion} para agregar stock")
+        sg.listaProductos.recorrer()
     except FileNotFoundError:
         print(f"El archivo {nombre_archivo} no se encuentra.")
 

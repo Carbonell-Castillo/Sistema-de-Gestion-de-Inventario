@@ -18,14 +18,18 @@ if __name__ == "__main__":
 
         elif option == 2:
             instrucciones_movimientos = sg.open_file()
-            if instrucciones_movimientos:
+            if sg.listaProductos.esta_vacia():
+                print("No existen productos en existencia")
+            elif instrucciones_movimientos:
                 print("Cargando Instrucciones de movimientos desde:", instrucciones_movimientos)
                 logic.leer_movimientos(instrucciones_movimientos)
         
         elif option == 3:
-            informe_inventario = sg.open_file()
-            if informe_inventario:
-                print("Creando Informe de inventario con el archivo:", informe_inventario)
+            if sg.listaProductos.esta_vacia():
+                print("No existen productos en existencia")
+            else:
+                sg.listaProductos.generar_reporte("Reporte.txt")
+
         elif option == 4:
             print("Saliendo...")
             break

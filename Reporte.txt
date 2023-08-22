@@ -1,0 +1,7 @@
+Reporte:
+Producto     Cantidad        Precio Unitario    Valor Total     Ubicacion      
+-------------------------------------------------------------
+Manzanas     150             2.5                375.0           BodegaA        
+Peras        30              3.0                90.0            BodegaB        
+Platanos     75              1.75               131.25          BodegaC        
+-------------------------------------------------------------
