@@ -1,9 +1,6 @@
 # Sistema de Gestión de Inventario
 
-- Nombre: Bruce Carbonell Castillo Cifuentes
-- Carnet: 202203069
-
-Este es un proyecto de práctica para el curso de Lenguajes Formales y de Programación. El objetivo del proyecto es desarrollar un sistema de gestión de inventario en Python que permita cargar un inventario inicial, cargar instrucciones de movimientos y generar informes de inventario.
+El objetivo del proyecto es desarrollar un sistema de gestión de inventario en Python que permita cargar un inventario inicial, cargar instrucciones de movimientos y generar informes de inventario.
 
 ## Estructura del Proyecto
 
